@@ -27,8 +27,21 @@
  *  21 => 'Fizz'
  *
  */
-function getFizzBuzz(/* num */) {
-  throw new Error('Not implemented');
+function getFizzBuzz(num) {
+  let numb = 0;
+  for (let i = 1; i <= num; i += 1) {
+    numb = i;
+    if (i % 3 === 0) {
+      numb = 'Fizz';
+    }
+    if (i % 5 === 0) {
+      numb = 'Buzz';
+    }
+    if (i % 15 === 0) {
+      numb = 'FizzBuzz';
+    }
+  }
+  return numb;
 }
 
 
@@ -174,8 +187,14 @@ function isInsideCircle(/* circle, point */) {
  *   'abracadabra'  => 'c'
  *   'entente' => null
  */
-function findFirstSingleChar(/* str */) {
-  throw new Error('Not implemented');
+function findFirstSingleChar(str) {
+  for (let i = 0; i < str.length; i += 1) {
+    const char = str[i];
+    if (str.indexOf(char) === i && str.indexOf(char, i + 1) === -1) {
+      return char;
+    }
+  }
+  return null;
 }
 
 
