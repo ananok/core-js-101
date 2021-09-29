@@ -204,7 +204,7 @@ function extractEmails(str) {
  *
  */
 function getRectangleString(/* width, height */) {
-
+  throw new Error('Not implemented');
 }
 
 
@@ -225,7 +225,7 @@ function getRectangleString(/* width, height */) {
  *
  */
 function encodeToRot13(/* str */) {
-
+  throw new Error('Not implemented');
 }
 
 /**
